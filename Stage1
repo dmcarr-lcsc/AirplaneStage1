@@ -13,7 +13,7 @@ def print_pass():
   global label1
   global back
   top = tk.Tk()
-  top.title('Find Available Seat')
+  top.title('Print Boarding Pass')
   top.geometry("200x150")
   label1 = tk.Label(top, text="Currently under construction").pack()
   back = tk.Button(top, text="Back", command=back_button).pack()
@@ -22,7 +22,7 @@ def show_manifest():
   global label1
   global back
   top = tk.Tk()
-  top.title('Find Available Seat')
+  top.title('Passanger Manifest')
   top.geometry("200x150")
   label1 = tk.Label(top, text="Currently under construction").pack()
   back = tk.Button(top, text="Back", command=back_button).pack()
@@ -31,7 +31,7 @@ def exit_button():
   global label1
   global back
   top = tk.Tk()
-  top.title('Find Available Seat')
+  top.title('Exit')
   top.geometry("200x150")
   label1 = tk.Label(top, text="Currently under construction").pack()
   back = tk.Button(top, text="Back", command=back_button).pack()
