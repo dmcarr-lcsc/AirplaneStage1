@@ -1,0 +1,70 @@
+import tkinter as tk
+
+def find_seat():
+  global label1
+  global back
+  top = tk.Tk()
+  top.title('Find Available Seat')
+  top.geometry("200x150")
+  label1 = tk.Label(top, text="Currently under construction").pack()
+  back = tk.Button(top, text="Back", command=back_button).pack()
+
+def print_pass():
+  global label1
+  global back
+  top = tk.Tk()
+  top.title('Find Available Seat')
+  top.geometry("200x150")
+  label1 = tk.Label(top, text="Currently under construction").pack()
+  back = tk.Button(top, text="Back", command=back_button).pack()
+
+def show_manifest():
+  global label1
+  global back
+  top = tk.Tk()
+  top.title('Find Available Seat')
+  top.geometry("200x150")
+  label1 = tk.Label(top, text="Currently under construction").pack()
+  back = tk.Button(top, text="Back", command=back_button).pack()
+
+def exit_button():
+  global label1
+  global back
+  top = tk.Tk()
+  top.title('Find Available Seat')
+  top.geometry("200x150")
+  label1 = tk.Label(top, text="Currently under construction").pack()
+  back = tk.Button(top, text="Back", command=back_button).pack()
+
+def back_button():
+  global hello
+  global option1
+  global option2
+  global option3
+  global option4
+  window = tk.Tk()
+  window.title("CS Airlines")
+  window.geometry("200x150")
+  hello = tk.Label(window, text="Welcome to CS Airlines").pack()
+  option1 = tk.Button(window, text="Find Available Seat", command=find_seat).pack()
+  option2 = tk.Button(window, text="Print Boarding Pass", command=print_pass).pack()
+  option3 = tk.Button(window, text="Passenger Manifest", command=show_manifest).pack()
+  option4 = tk.Button(window, text="Exit", command=exit_button).pack()
+
+
+#window shown upon start
+window = tk.Tk()
+window.title("CS Airlines")
+window.geometry("200x150")
+
+hello = tk.Label(text="Welcome to CS Airlines").pack()
+option1 = tk.Button(text="Find Available Seat", command=find_seat)
+option1.pack()
+option2 = tk.Button(text="Print Boarding Pass", command=print_pass)
+option2.pack()
+option3 = tk.Button(text="Passenger Manifest", command=show_manifest)
+option3.pack()
+option4 = tk.Button(text="Exit", command=exit_button)
+option4.pack()
+
+tk.mainloop()
